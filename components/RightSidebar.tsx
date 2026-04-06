@@ -26,33 +26,30 @@ export default function RightSidebar({ cheatsheet }: RightSidebarProps) {
             </h2>
           </div>
 
-          <div
-            className="flex flex-col gap-3 text-base tracking-[0.32px] leading-6 text-white/75 whitespace-nowrap"
-            style={{ fontFamily: "var(--font-mono)" }}
-          >
-            <div className="flex gap-3 items-center">
-              <span>TIMELINE:</span>
-              <span>{cheatsheet.timeline}</span>
+          <div className="flex flex-col gap-3 text-base tracking-[0.32px] leading-6 text-white/75">
+            <div className="flex gap-3 items-center whitespace-nowrap">
+              <span style={{ fontFamily: "var(--font-mono)" }}>TIMELINE:</span>
+              <span style={{ fontFamily: "var(--font-exo)" }}>{cheatsheet.timeline}</span>
             </div>
 
-            <div className="flex gap-3 items-center">
-              <span>EFFICACY:</span>
-              <span>{efficacyBar}</span>
+            <div className="flex gap-3 items-center whitespace-nowrap">
+              <span style={{ fontFamily: "var(--font-mono)" }}>EFFICACY:</span>
+              <span style={{ fontFamily: "var(--font-exo)" }}>{efficacyBar}</span>
             </div>
 
-            <div className="flex gap-3 items-center">
-              <span>MATERIAL:</span>
-              <span>{cheatsheet.material}</span>
+            <div className="flex gap-3 items-center whitespace-nowrap">
+              <span style={{ fontFamily: "var(--font-mono)" }}>MATERIAL:</span>
+              <span style={{ fontFamily: "var(--font-exo)" }}>{cheatsheet.material}</span>
             </div>
 
-            <div className="flex flex-col">
-              <span>CONTEXT:</span>
-              <span>{cheatsheet.name}</span>
+            <div className="flex flex-col gap-1.5">
+              <span className="text-white" style={{ fontFamily: "var(--font-mono)" }}>CONTEXT:</span>
+              <span className="text-sm leading-6" style={{ fontFamily: "var(--font-exo)" }}>{cheatsheet.context}</span>
             </div>
 
-            <div className="flex flex-col">
-              <span>DESCRIPTION:</span>
-              <span>{cheatsheet.name}</span>
+            <div className="flex flex-col gap-1.5">
+              <span className="text-white" style={{ fontFamily: "var(--font-mono)" }}>DESCRIPTION:</span>
+              <span className="text-sm leading-6" style={{ fontFamily: "var(--font-exo)" }}>{cheatsheet.description}</span>
             </div>
           </div>
         </div>

@@ -17,6 +17,13 @@ const fragmentMono = Fragment_Mono({
   display: "swap",
 });
 
+const neueMontreal = localFont({
+  src: "../public/NeueMontreal-Regular.otf",
+  variable: "--font-exo",
+  weight: "400",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Angie's Cheatsheet Compendium",
   description: "A collection of course cheatsheets",
@@ -28,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${otBulb.variable} ${fragmentMono.variable} h-full antialiased`}>
+    <html lang="en" className={`${otBulb.variable} ${fragmentMono.variable} ${neueMontreal.variable} h-full antialiased`}>
       <body className="h-full overflow-hidden">{children}</body>
     </html>
   );
