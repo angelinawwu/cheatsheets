@@ -61,7 +61,7 @@ export default function PDFViewerInner({ file, pageNumber, onNumPages }: PDFView
           </div>
         }
       >
-          <div key={`${file}-${pageNumber}`}>
+          <div key={`${file}-${pageNumber}`} style={{ filter: "grayscale(1)" }}>
             <Page
               pageNumber={pageNumber}
               height={dimensions.height}

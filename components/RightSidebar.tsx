@@ -12,7 +12,7 @@ export default function RightSidebar({ cheatsheet }: RightSidebarProps) {
   const efficacyBar = "■".repeat(filled) + "□".repeat(empty);
 
   return (
-    <div className="absolute right-0 top-0 h-full w-[320px] bg-[#191919] border-l border-white/30 shadow-[0px_12px_20px_0px_rgba(0,5,151,0.05)] flex flex-col gap-3 px-3 py-6 overflow-hidden z-10">
+    <div className="absolute right-0 top-0 h-full w-[320px] bg-[#191919] border-l border-white/30 shadow-[0px_12px_20px_0px_rgba(0,5,151,0.05)] flex flex-col gap-3 px-4 py-6 overflow-hidden z-10">
         <div
           key={cheatsheet.id}
           className="flex flex-col gap-3"
